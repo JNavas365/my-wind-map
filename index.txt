@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Nigeria Wind Farm Suitability Map</title>
+    <style>
+        body { font-family: Arial, sans-serif; margin: 20px; }
+        h1 { color: green; }
+        .legend { background: #f0f0f0; padding: 10px; width: 250px; border-radius: 8px; margin-top: 20px; }
+        .legend span { display: inline-block; width: 20px; height: 20px; margin-right: 5px; vertical-align: middle; }
+        .legend p { margin: 5px 0; }
+        iframe { width: 100%; height: 600px; border: 1px solid #ccc; margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <h1>Wind Farm Suitability Map of Nigeria</h1>
+    <p>This map shows the best locations for wind energy development based on wind speed, grid access, roads, and slope. Green = very suitable, Red = not suitable.</p>
+    
+    <div class="legend">
+        <p><strong>Suitability</strong></p>
+        <p><span style="background: darkgreen;"></span> Very High (5)</p>
+        <p><span style="background: lightgreen;"></span> High (4)</p>
+        <p><span style="background: yellow;"></span> Moderate (3)</p>
+        <p><span style="background: orange;"></span> Low (2)</p>
+        <p><span style="background: red;"></span> Very Low (1)</p>
+        <p><span style="background: gray;"></span> Excluded (protected areas, etc.)</p>
+    </div>
+
+    <!-- Embedded map from Netlify -->
+    <iframe src="https://willowy-strudel-2fa8b8.netlify.app/"></iframe>
+
+    <p><i>Map created using QGIS and published with qgis2web. Data sources: Global Wind Atlas, OpenStreetMap, SRTM, NBET, WDPA.</i></p>
+</body>
+</html>
